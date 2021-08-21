@@ -3,6 +3,14 @@
   color: #000;
 }
 
+.main-title:after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 4px;
+  background: #000;
+}
+
 .form-control {
   border: 2px solid #000;
 }
