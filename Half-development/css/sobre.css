@@ -1,0 +1,12 @@
+#sobre-area .submain-title,
+.main-title {
+  color: #000;
+}
+
+li {
+  list-style-type: none;
+}
+
+.vantagens-sobre ul li {
+  display: inline;
+}

@@ -1,0 +1,250 @@
+/* Gerais */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+nav,
+footer {
+  background-color: black;
+}
+
+.row {
+  margin: 0;
+}
+
+#header .container {
+  padding: 80px 0;
+}
+
+.main-title {
+  color: #fff;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-title:after {
+  content: "";
+  border-top: 2px solid #fff;
+  width: 15%;
+  position: absolute;
+  top: 60px;
+  left: 42.5%;
+}
+
+.submain-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.main-btn {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 150px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+}
+
+.main-btn-preto {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 150px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.main-btn-preto:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+  border-color: #000;
+}
+
+/* Header */
+
+#nav-container .navbar {
+  height: 115px;
+}
+
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#logo {
+  padding-left: 20px;
+}
+
+#navbar-links .nav-item {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#navbar-links .nav-item a {
+  color: white;
+}
+
+#navbar-links .nav-item a:hover {
+  color: #939090;
+}
+
+#navbar-links .navbar-nav {
+  padding: 10px 20px;
+}
+
+.nav-item {
+  padding-right: 15px;
+}
+
+#navbar-links ul li a.menu_ativo {
+  color: #939090;
+}
+
+/* Main */
+
+/* Slider */
+
+.container-fluid {
+  padding: 0;
+}
+
+#carouselExampleCaptions .carousel-inner,
+#carouselExampleCaptions .carousel-item {
+  height: 90vh;
+}
+
+#carouselExampleCaptions .carousel-caption {
+  top: 30%;
+}
+
+#carouselExampleCaptions .carousel-caption h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+#carouselExampleCaptions .carousel-caption p {
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 100px;
+  color: #fff;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/* Footter */
+
+#footer-area {
+  padding: 10px 0px;
+  margin-top: 80px;
+}
+
+#footer-area .submain-title {
+  margin-bottom: 8px;
+}
+
+#footer-area p {
+  color: #fff;
+  text-align: center;
+}
+
+#footer-area ul {
+  padding: 0px;
+}
+
+.menu-footer li {
+  list-style: none;
+  text-align: center;
+}
+
+#footer-area li a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+#footer-area .contato-icones p i {
+  font-size: 30px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+
+#footer-area .contato-icones p {
+  margin-bottom: 20px;
+}
+
+#footer-area .redes-footer ul {
+  text-align: center;
+}
+
+#footer-area .redes-footer li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+#footer-area i {
+  color: #fff;
+  font-size: 50px;
+}
+
+#footer-area ul li i:hover,
+#footer-area ul li a:hover {
+  text-decoration: none;
+  color: #939090;
+}
+
+/* Copy */
+
+#copy-area {
+  background-color: #0d0d0e;
+}
+
+#copy-area .container {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#copy-area .container p {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+#copy-area .container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#copy-area .container a:hover {
+  color: #939090;
+}
