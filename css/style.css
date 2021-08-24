@@ -165,6 +165,11 @@ footer {
   height: 90vh;
 }
 
+.image1 {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 #carouselExampleCaptions .carousel-caption {
   top: 30%;
 }
@@ -208,18 +213,18 @@ footer {
   margin-bottom: 40px;
 }
 
-/* Contato */
+/* Sobre */
 
-#home-contato {
+#home-sobre {
   height: 500px;
 }
 
-#home-contato .container-fluid,
-#home-contato .row {
+#home-sobre .container-fluid,
+#home-sobre .row {
   height: 100%;
 }
 
-#home-contato .div-sobre {
+#home-sobre .div-sobre {
   text-align: center;
   padding: 70px 50px;
 }
@@ -247,6 +252,12 @@ footer {
 
 #company-sobre p {
   margin-bottom: 20px;
+}
+
+/* Sobre */
+
+#home-video {
+  margin-top: 60px;
 }
 
 /* Footter */
