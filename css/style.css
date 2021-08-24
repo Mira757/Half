@@ -162,12 +162,12 @@ footer {
 
 #carouselExampleCaptions .carousel-inner,
 #carouselExampleCaptions .carousel-item {
-  height: 90vh;
+  height: 100vh;
 }
 
 .image1 {
-  width: 100% !important;
   height: 100% !important;
+  object-fit: cover;
 }
 
 #carouselExampleCaptions .carousel-caption {
