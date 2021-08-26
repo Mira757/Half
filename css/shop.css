@@ -4,6 +4,13 @@
 
 .project-box {
   margin-bottom: 30px;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  object-fit: cover;
 }
 
 #filter-btn-box {
@@ -28,11 +35,6 @@
 #portfolio-area .filter-btn:hover {
   color: #fff;
   background-color: #000;
-}
-
-.img-fluid {
-  border: 1px solid black;
-  padding: 8px;
 }
 
 /* Flip dos Cards */
@@ -65,4 +67,10 @@
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+main p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
 }
