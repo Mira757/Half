@@ -129,7 +129,7 @@ footer {
 .anime {
   overflow: hidden;
   position: relative;
-  animation: 2000ms anime 0.5s ease forwards;
+  animation: anime 2000ms ease forwards;
 }
 
 @keyframes anime {
@@ -147,7 +147,7 @@ footer {
 .anime1 {
   overflow: hidden;
   position: relative;
-  animation: 1600ms anime1 0.5s ease forwards;
+  animation: anime1 1600ms ease forwards;
 }
 
 @keyframes anime1 {
@@ -165,7 +165,7 @@ footer {
 .anime2 {
   overflow: hidden;
   position: relative;
-  animation: 2000ms anime2 0.5s ease forwards;
+  animation: anime2 2000ms ease forwards;
 }
 
 @keyframes anime2 {
@@ -181,7 +181,7 @@ footer {
 .anime3 {
   overflow: hidden;
   position: relative;
-  animation: 1600ms anime3 0.5s ease forwards;
+  animation: anime3 1600ms ease forwards;
 }
 
 @keyframes anime3 {
