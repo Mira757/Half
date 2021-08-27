@@ -117,6 +117,85 @@ footer {
   border-color: #000;
 }
 
+/* Animações */
+
+.animeleft,
+.animemiddle,
+.animeright {
+  overflow: hidden;
+  opacity: 0;
+}
+
+.anime {
+  overflow: hidden;
+  position: relative;
+  animation: 2000ms anime 0.5s ease forwards;
+}
+
+@keyframes anime {
+  from {
+    opacity: 0;
+    transform: translateY(-101%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.anime1 {
+  overflow: hidden;
+  position: relative;
+  animation: 1600ms anime1 0.5s ease forwards;
+}
+
+@keyframes anime1 {
+  from {
+    opacity: 0;
+    transform: translateX(-101%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.anime2 {
+  overflow: hidden;
+  position: relative;
+  animation: 2000ms anime2 0.5s ease forwards;
+}
+
+@keyframes anime2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.anime3 {
+  overflow: hidden;
+  position: relative;
+  animation: 1600ms anime3 0.5s ease forwards;
+}
+
+@keyframes anime3 {
+  from {
+    opacity: 0;
+    transform: translateX(101%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
 /* Header */
 
 nav {
