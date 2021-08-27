@@ -55,12 +55,21 @@ footer {
   height: 4px;
   background: #000;
   position: relative;
-  left: 42.5%;
+  left: 42.2%;
   margin-top: 8px;
 }
 
 .submain-title {
   color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.submain-title-preto {
+  color: #000;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -110,17 +119,18 @@ footer {
 
 /* Header */
 
-#nav-container .navbar {
+nav {
   height: 115px;
 }
 
-#nav-container {
-  padding-top: 0;
-  padding-bottom: 0;
+#header {
+  margin-bottom: 115px;
 }
 
-#logo {
+#header img {
   padding-left: 20px;
+  width: 100% !important;
+  height: 120px;
 }
 
 #navbar-links .nav-item {
@@ -168,7 +178,6 @@ footer {
 #carouselExampleCaptions img {
   height: 100% !important;
   width: 100% !important;
-  object-fit: cover;
 }
 
 #carouselExampleCaptions .carousel-caption {
@@ -222,12 +231,12 @@ footer {
 #home-sobre .div-sobre {
   text-align: center;
   padding: 70px 50px;
+  height: 100%;
 }
 
 #company-img {
-  background-image: url("../img/produto-4.jpeg");
+  background-image: url("../img/home/sobre/img-sobre.jpeg");
   background-size: cover;
-  height: 100%;
 }
 
 #company-sobre {
@@ -267,7 +276,7 @@ footer {
 /* Footter */
 
 #footer-area {
-  padding: 10px 0px;
+  padding: 10px 0px 0px 0px;
   margin-top: 80px;
   max-width: 100%;
 }
@@ -276,7 +285,14 @@ footer {
   margin-bottom: 8px;
 }
 
+#footer-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 #footer-area p {
+  font-size: 18px;
   color: #fff;
   text-align: center;
 }
@@ -288,9 +304,11 @@ footer {
 .menu-footer li {
   list-style: none;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 #footer-area li a {
+  font-size: 18px;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -360,16 +378,79 @@ footer {
 
 /* Responsive */
 
-@media (max-width: 768px) {
-  /* geral */
+@media (max-width: 1024px) {
+  /* Slider */
 
+  #carouselExampleCaptions .carousel-caption h2 {
+    margin-bottom: 80%;
+    margin-top: -32%;
+  }
+
+  /* Produtos */
+
+  .main-title-preto::after {
+    position: relative;
+    left: 39%;
+  }
+
+  /* Sobre */
+  #company-img {
+    background-size: 110% 100%;
+  }
+
+  /* Footer */
+
+  #footer-area li a,
+  #footer-area p {
+    font-size: 16px;
+  }
+
+  #footer-area .title-contato {
+    position: relative;
+    left: -5px;
+  }
+
+  #footer-area .contato-icones p:nth-child(1) {
+    position: relative;
+    top: 30px;
+    left: -23px;
+  }
+
+  #footer-area .contato-icones p:nth-child(1) i {
+    position: relative;
+    top: -30px;
+    left: 80px;
+  }
+
+  #footer-area .contato-icones p:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+  }
+
+  #footer-area .redes-footer ul li i {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 768px) {
   /* Header */
-  button {
-    color: #fff;
+
+  .navbar {
+    height: auto;
   }
 
   .container {
     padding: 20px 0;
+  }
+
+  #header img {
+    padding-left: 8px;
+    height: 110px;
+  }
+
+  .navbar-toggler {
+    margin-right: 25px;
   }
 
   /* slider */
@@ -380,12 +461,20 @@ footer {
   }
 
   #carouselExampleCaptions .carousel-caption h2 {
-    margin-bottom: 45%;
+    margin-bottom: 52%;
+    margin-top: -24%;
   }
 
   .carousel-caption {
     left: 10%;
     right: 10%;
+  }
+
+  /* Produtos */
+
+  .main-title-preto::after {
+    position: relative;
+    left: 36%;
   }
 
   /* Cards */
@@ -397,43 +486,90 @@ footer {
   /* Sobre */
 
   #home-sobre .div-sobre {
-    height: 500px;
     padding: 50px 25px;
   }
 
   #company-img {
-    background-size: 111% 100%;
+    background-image: url(../img/home/sobre/img-sobre-responsivo.png);
+    background-size: contain;
+  }
+
+  #id-btn {
+    margin-top: 50px;
+  }
+
+  /* Footer */
+
+  #footer-area li a,
+  #footer-area p {
+    font-size: 16px;
+  }
+
+  #footer-area .title-contato {
+    position: relative;
+    left: 23px;
+  }
+
+  #footer-area .contato-icones p:nth-child(1) {
+    position: relative;
+    top: 30px;
+    left: 5px;
+  }
+
+  #footer-area .contato-icones p:nth-child(1) i {
+    position: relative;
+    top: -30px;
+    left: 79px;
+  }
+
+  #footer-area .contato-icones p:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+  }
+
+  #footer-area .redes-footer ul li i {
+    font-size: 33px;
   }
 }
 
 @media (max-width: 425px) {
-  /* geral */
-  .main-title-preto::after {
-    position: relative;
-    left: 40px;
-  }
-
   /* slider */
 
-  #mainSlider {
-    margin-top: 90px;
+  #carouselExampleCaptions .carousel-inner,
+  #carouselExampleCaptions .carousel-item {
+    height: 42vh;
   }
 
-  #mainSlider .carousel-caption {
+  #carouselExampleCaptions .carousel-caption {
     top: 5%;
   }
 
-  #mainSlider .carousel-caption h2 {
-    font-size: 18px;
-    margin-bottom: 40px;
-  }
-
-  #mainSlider .carousel-caption p {
-    display: none;
+  #carouselExampleCaptions .carousel-caption h2 {
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 50%;
   }
 
   .carousel-caption .main-btn {
+    padding: 10px;
     font-size: 14px;
+  }
+
+  /* Produtos */
+
+  #home-portfolio h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .main-title-preto::after {
+    position: relative;
+    left: 25.2%;
+  }
+
+  #home-portfolio .col-md-3 {
+    margin-top: 30px;
   }
 
   /* Sobre */
@@ -451,7 +587,30 @@ footer {
 
   /* Footer */
 
-  #footer-area img {
-    width: 100%;
+  #footer-area .title-contato {
+    position: relative;
+    left: 0px;
+  }
+
+  #footer-area .contato-icones p:nth-child(1) {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
+
+  #footer-area .contato-icones p:nth-child(1) i {
+    position: relative;
+    top: 0px;
+    left: 5px;
+  }
+
+  #footer-area .contato-icones p:nth-child(2) {
+    display: block;
+    position: relative;
+    top: 0px;
+  }
+
+  #footer-area .redes-footer ul li i {
+    font-size: 55px;
   }
 }

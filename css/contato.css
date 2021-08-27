@@ -1,37 +1,23 @@
-#contato-area .submain-title,
-.main-title {
-  color: #000;
+#contato-area {
+  margin-top: -3%;
 }
 
-.main-title:after {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 4px;
-  background: #000;
+#contato-area .col-md-4 {
+  margin-bottom: 100px;
 }
 
-.form-control {
-  border: 2px solid #000;
-}
-
-.whatsapp {
-  height: 300px;
-  width: 300px;
-}
-
-.contato-mapa {
-  margin-top: 60px;
-}
-
-.dados-contato p {
+.telefone-contato p,
+.email-contato p {
   text-align: center;
 }
 
-.dados-contato p i {
+.telefone-contato p i,
+.email-contato p i {
   font-size: 30px;
-  margin-right: 10px;
+  padding-right: 5px;
 }
+
+/* Redes */
 
 .redes-contato ul {
   padding: 0px;
@@ -57,4 +43,41 @@
   color: #939090;
   background-color: transparent;
   border-color: #939090;
+}
+
+/* Formulario */
+
+.form-control {
+  border: 2px solid #000;
+  width: 80%;
+}
+
+/* Localização */
+
+.contato-mapa iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .redes-contato ul li i {
+    color: #000;
+    font-size: 40px;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contato-area .col-md-4 {
+    margin-bottom: 50px;
+  }
+
+  .contato-mapa {
+    margin-top: 50px;
+  }
 }
